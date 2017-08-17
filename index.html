@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DAB Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.png" type="image/x-icon">
+    <style>
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+
+    <h1 class="page-header">DAB Dashboard</h1>
+    <span class="text-muted">Block Number</span>
+    <span class="text-muted" id="blockNumber"></span>
+    <div class="row">
+        <div>
+            <div class="panel panel-default">
+                <h2 class="page-header">Deposit Contract</h2>
+                <div class="panel-body">
+                    <div class="row placeholders">
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <h4>Reserve Fund</h4>
+                            <span class="text-muted" id="deposit">0.00000000</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <h4>Token Price</h4>
+                            <span class="text-muted" id="depositPrice">0.00000000</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <h4>Token Supply</h4>
+                            <span class="text-muted" id="depositSupply">0.00000000</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <h4>Token Balance</h4>
+                            <span class="text-muted" id="depositBalance">0.00000000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2 class="page-header">Credit Contract</h2>
+                    <div class="panel-body">
+                        <div class="row placeholders">
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                                <h4>Reserve Fund</h4>
+                                <span class="text-muted" id="credit">0.00000000</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                                <h4>Token Price</h4>
+                                <span class="text-muted" id="creditPrice">0.00000000</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                                <h4>Token Supply</h4>
+                                <span class="text-muted" id="creditSupply">0.00000000</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 placeholder">
+                                <h4>Token Balance</h4>
+                                <span class="text-muted" id="creditBalance">0.00000000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/web3/dist/web3.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -16333,7 +16333,7 @@ function queryDABInfo() {
       $('#credit').text(Number(creditFund).toFixed(8));
     });
 
-    
+
     if(typeof depositContract !== "undefined"){
       depositContract.depositPrice.call(function (e, depositPrice) {
         if (e) {

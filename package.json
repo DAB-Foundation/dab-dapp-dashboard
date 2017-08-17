@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DAB-Foundation/dab-dapp-dashboard#readme",
   "dependencies": {
-    "web3": "^0.18.2"
+    "web3": "^0.18.2",
+    "bluebird": "^3.4.7"
   }
 }

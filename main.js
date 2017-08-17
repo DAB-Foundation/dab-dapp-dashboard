@@ -16189,7 +16189,7 @@ module.exports = XMLHttpRequest;
 },{}],88:[function(require,module,exports){
 let errors = {
   invalidNetwork: new Error('Sorry, ENS is not available on this network at the moment.')
-}
+};
 
 var allLoaded = setInterval(function() {
   if (/loaded|complete/.test(document.readyState)) {
@@ -16217,7 +16217,7 @@ function checkConnection() {
     function check() {
       attempts--;
       if(web3.isConnected()) {
-        clearInterval(checkInterval)
+        clearInterval(checkInterval);
         resolve(web3);
       } else if (attempts <= 0) {
         console.log('checking..');
@@ -16250,7 +16250,7 @@ function checkNetwork() {
       if (e) {
         return reject(e)
       }
-      console.log('checkNetwork', res.hash)
+      console.log('checkNetwork', res.hash);
       networkId = res.hash.slice(2,8);
       switch(res.hash) {
         case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
@@ -16312,9 +16312,9 @@ function queryDABInfo() {
   web3.eth.defaultAccount = depositContractAddress;
 
   function query() {
-    
-    var number = web3.eth.blockNumber
-      $('#blockNumber').text(number);
+
+    var number = web3.eth.blockNumber;
+    $('#blockNumber').text(number);
 
     //
     web3.eth.getBalance(depositContractAddress, function (e, depositFundWei) {
@@ -16394,7 +16394,7 @@ function queryDABInfo() {
     }
 
   }
-  setInterval(query(), 3000);
+  setInterval(query, 3000);
 }
 
 

@@ -61,7 +61,7 @@ function queryWeb3() {
     var creditBalance = web3.fromWei(creditBalanceWei, 'ether');
     $('#creditBalance').text(creditBalance);
 
-  }, 1000);
+  }, 3000);
 }
 
 

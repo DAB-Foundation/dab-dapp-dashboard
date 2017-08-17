@@ -28,46 +28,37 @@ function queryWeb3() {
   setInterval(function() {
 
     var number = web3.eth.blockNumber;
-    if ($('#blockNumber').text() != number)
-      $('#blockNumber').text(number).effect("highlight");
+    $('#blockNumber').text(number);
 
     var depositFundWei = web3.eth.getBalance(depositContractAddress).toNumber();
     var depositFund = web3.fromWei(depositFundWei, 'ether');
-    if ($('#deposit').text() != depositFund)
-    $('#deposit').text(depositFund).effect("highlight");
+    $('#deposit').text(depositFund);
 
     var depositPrice = depositContract.depositPrice.call()/100000000;
-    if ($('#depositPrice').text() != depositPrice)
-    $('#depositPrice').text(depositPrice).effect("highlight");
+    $('#depositPrice').text(depositPrice);
 
     var depositSupplyWei = depositToken.totalSupply.call();
     var depositSupply = web3.fromWei(depositSupplyWei, 'ether');
-    if ($('#depositSupply').text() != depositSupply)
-    $('#depositSupply').text(depositSupply).effect("highlight");
+    $('#depositSupply').text(depositSupply);
 
     var depositBalanceWei = depositContract.depositBalance.call();
     var depositBalance = web3.fromWei(depositBalanceWei, 'ether');
-    if ($('#depositBalance').text() != depositBalance)
-    $('#depositBalance').text(depositBalance).effect("highlight");
+    $('#depositBalance').text(depositBalance);
 
     var creditFundWei = web3.eth.getBalance(creditContractAddress).toNumber();
     var creditFund = web3.fromWei(creditFundWei, 'ether');
-    if ($('#credit').text() != creditFund)
-    $('#credit').text(creditFund).effect("highlight");
+    $('#credit').text(creditFund);
 
     var creditPrice = creditContract.creditPrice.call()/100000000;
-    if ($('#creditPrice').text() != creditPrice)
-    $('#creditPrice').text(creditPrice).effect("highlight");
+    $('#creditPrice').text(creditPrice);
 
     var creditSupplyWei = creditToken.totalSupply.call();
     var creditSupply = web3.fromWei(creditSupplyWei, 'ether');
-    if ($('#creditSupply').text() != creditSupply)
-    $('#creditSupply').text(creditSupply).effect("highlight");
+    $('#creditSupply').text(creditSupply);
 
     var creditBalanceWei = creditContract.creditBalance.call();
     var creditBalance = web3.fromWei(creditBalanceWei, 'ether');
-    if ($('#creditBalance').text() != creditBalance)
-    $('#creditBalance').text(creditBalance).effect("highlight");
+    $('#creditBalance').text(creditBalance);
 
   }, 1000);
 }

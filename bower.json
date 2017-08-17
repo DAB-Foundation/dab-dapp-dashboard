@@ -1,0 +1,22 @@
+{
+  "name": "dab-dapp-dashboard",
+  "authors": [
+    "dabdevelop <develop@dab.vc>"
+  ],
+  "description": "DAB dashboard",
+  "main": "index.html",
+  "license": "Apache License 2.0",
+  "homepage": "http://dashboard.dab-foundation.org/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "web3": "^0.18.2",
+    "jquery-ui": "^1.11.4"
+  }
+}

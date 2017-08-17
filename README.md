@@ -1,2 +1,2 @@
 # dab-dapp-dashboard
-The Dashboard Dapp of DAB contracts.
+The Dashboard Ðapp of DAB contracts.

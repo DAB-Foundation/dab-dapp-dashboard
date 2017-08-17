@@ -15,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^3.3.7",
     "web3": "^0.18.2",
-    "jquery-ui": "^1.11.4"
+    "jquery-ui": "^1.12.0"
   }
 }

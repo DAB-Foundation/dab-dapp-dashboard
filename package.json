@@ -11,7 +11,7 @@
     "url": "git+https://github.com/DAB-Foundation/dab-dapp-dashboard.git"
   },
   "author": "dabdevelop <develop@dab.vc>",
-  "license": "Apache License 2.0",
+  "license": "SPDX",
   "bugs": {
     "url": "https://github.com/DAB-Foundation/dab-dapp-dashboard/issues"
   },

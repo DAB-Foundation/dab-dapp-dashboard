@@ -5,7 +5,7 @@
   ],
   "description": "DAB dashboard",
   "main": "index.html",
-  "license": "Apache License 2.0",
+  "license": "SPDX",
   "homepage": "http://dashboard.dab-foundation.org/",
   "ignore": [
     "**/.*",

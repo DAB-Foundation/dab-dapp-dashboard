@@ -8,10 +8,10 @@ It is based on web3.js and communicates directly with the infura.
 
 Install requirement, run command in the project root directory:
 ``` sh
-    npm install -g browser
+    npm install -g bower
     npm install -g browserify
     npm install
-    browser install
+    bower install
 ```
 
 To build the project, run:
